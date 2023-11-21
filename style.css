@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #8accde;
+
+}
+.pannel {
+  border: 2px solid;
+  height: 80vh;
+  width: 80vw;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.pannel .header {
+ 
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  height: 15%;
+  background-color: #0f9fc5;
+  color: #ffff;
+}
+.pannel .header .hit,
+.time,
+.score {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .hit .hit-box,
+.time-box,
+.score-box {
+  background-color: #fff;
+  color: black;
+  padding: 5px;
+  height: 30px;
+  width: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* bubble are is strated from here */
+
+.pannel .bubble-area {
+  padding: 10px;
+
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+}
+.bubble-area .bubble {
+  background-color: green;
+  height: 50px;
+  width:  50px;
+  font-size: 18px;
+  /* height: 4vw;
+  width: 4vw; */
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.bubble-area .bubble:hover {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.time-out{
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+.restart {
+  padding: 8px 10px;
+  
+  border-radius: 5px;
+  letter-spacing: 3px;
+  border: 1px solid ;
+  background-color: transparent;
+  transition: all .2s;
+  
+}
+.time-out button:hover{
+  background-color: #222;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+footer{
+  /* background-color: #222; */
+  width: 80%;
+  margin-bottom: 10px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  /* background-color: red; */
+
+
+}
+
+footer .links{
+display: flex;
+justify-content: center;
+gap: 30px;
+margin-top: 10px;
+list-style: none;
+
+}
+.links a{
+  color: #222;
+  /* color: #fff; */
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    
+    .header div{
+      flex-direction: column;
+    }
+    .pannel{
+      width: 95vw;
+      margin-top:-30px;
+    }
+    .pannel .header{
+      padding: 5px 30px;
+            
+    }
+   
+ 
+    .bubble-area .bubble {
+    height: 40px;
+    width:  40px;
+  }
+.links{
+  font-size: 30px;
+}
+  .links span {
+    display: none;
+  }
+  footer{
+    margin:0;
+    padding:0;
+  
+  }
+
+
+}

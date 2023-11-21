@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <title>TO DO List</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="edit-popup">
+        <div class="popup-head">
+          <p>Edit your To-do</p>
+          <i id="closePopup" onclick="removePopup()" class="clicks"><i class="ri-close-fill"></i></i>
+        </div>
+        <input type="text" id="editInput" />
+
+        <div class="other-btn">
+          <button onclick="makeChanges()" id="editDone" class="clicks">
+            Done
+          </button>
+          <button onclick="removePopup()" id="editClose" class="clicks">
+            Close
+          </button>
+        </div>
+      </div>
+      <div class="header">
+        <h1>To Do List</h1>
+        <p>Simple App to manage your daily to-dos</p>
+      </div>
+      <div class="pannel">
+        <div class="input">
+          <input type="text" id="inputBox" placeholder="Write new to-do" />
+          <button id="addBtn"><i class="ri-add-fill" style="font-weight: 700;"></i></button>
+        </div>
+        <div class="output">
+          <!-- list of items  -->
+          <div class="empty-msg"><i class="ri-information-line" style="margin-right: 10px; font-size: 20px;"></i> Empty List Add To-dos</div>
+        </div>
+      </div>
+      <div class="footer">
+        <a target="_blank" href="https://www.linkedin.com/in/rohit-singh-117644204/" class="clicks" ><i class="ri-linkedin-box-fill" ></i><span>linkdin</span></a>
+        <a target="_blank" href="https://github.com/rohitsinghthakur" class="clicks"><i class="ri-github-fill"></i><span>github</span></a>
+        <a target="_blank" href="mailto:rohitsinghdamoh@gmail.com" class="clicks"><i class="ri-mail-send-fill"></i><span>mail</span></a>
+      </div>
+    </div>
+
+    <div class="popup-massages">
+      <div class="changes-done-popup">
+        <p>item added succesfully</p>
+        <p class="clicks"><i class="ri-close-fill"></i></p>
+      </div>
+      <div class="empty-popup">
+        <p>input box is Empty</p>
+        <p class="clicks"><i class="ri-close-fill"></i></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
